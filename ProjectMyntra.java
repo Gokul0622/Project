@@ -68,10 +68,11 @@ public class ProjectMyntra {
 		action1.moveToElement(Sort).perform();
 		WebElement Sorting = driver.findElement(By.xpath("(//label[@class='sort-label '])[3]"));
 		Sorting.click();
+		WebElement FirstProduct = driver.findElement(By.xpath(""));
 
 		String Price = driver.findElement(By.xpath("(//span[@class='product-discountedPrice'])[1]")).getText();
 		System.out.println(" Price of the Item is : " +Price);
-
+		
 		WebElement Hover = driver.findElement(By.xpath("(//h3[@class='product-brand'])[1]"));
 	
 		Actions action2=new Actions(driver);
